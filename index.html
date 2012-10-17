@@ -595,24 +595,24 @@ all installed plugins</td>
         </tr>
 
         <tr>
-            <td class="desc">Doctrine: Clears all metadata cache for a entity manager</td>
+            <td class="desc">Doctrine: Clears all metadata cache for an entity manager</td>
             <td> - </td>
             <td> - </td>
             <td><code>$ php app/console doctrine:cache:clear-metadata [--em=...]</code></td>
         </tr>
 
         <tr>
-            <td class="desc">Doctrine: Clears all query cache for a entity manager</td>
+            <td class="desc">Doctrine: Clears all query cache for an entity manager</td>
             <td> - </td>
             <td> - </td>
             <td><code>$ php app/console doctrine:cache:clear-query [--em=...]</code></td>
         </tr>
 
         <tr>
-            <td class="desc">Doctrine: Clears result cache for a entity manager</td>
+            <td class="desc">Doctrine: Clears result cache for an entity manager</td>
             <td> - </td>
             <td> - </td>
-            <td><code>$ php app/console doctrine:cache:clear-result [--id=...] [--regex=...] [--prefix=...] [--suffix=...] [--em=...]</code></td>
+            <td><code>$ php app/console doctrine:cache:clear-result [--flush] [--em=...]</code></td>
         </tr>
 
         <tr>
@@ -648,7 +648,7 @@ all installed plugins</td>
             <td class="desc">Doctrine: Executes arbitrary DQL directly from the command line</td>
             <td> - </td>
             <td> - </td>
-            <td><code>$ php app/console doctrine:query:dql [--hydrate=...] [--first-result=...] [--max-result=...] [--depth=...] [--em=...]</code></td>
+            <td><code>$ php app/console doctrine:query:dql [--hydrate=...] [--first-result=...] [--max-result=...] [--depth=...] [--em=...] &lt;dql&gt;</code></td>
         </tr>
 
         <tr>
@@ -677,6 +677,13 @@ all installed plugins</td>
             <td> - </td>
             <td> - </td>
             <td><code>$ php app/console doctrine:schema:update [--complete] [--dump-sql] [--force] [--em=...]</code></td>
+        </tr>
+
+        <tr>
+            <td class="desc">Doctrine: Checks the current mappings for valid forward and reverse mappings</td>
+            <td> - </td>
+            <td> - </td>
+            <td><code>$ php app/console doctrine:schema:validate [--em=...]</code></td>
         </tr>
 
         <tr>
